@@ -3,7 +3,7 @@
 FDRPackageApp is a React Native demo application designed to showcase.
 
 <p align="center">
-  <img src="./Screenshot/packages.png" alt="Packages Screen" width="45%" />
+  <img src="./Screenshot/home.png" alt="Home Screen" width="45%" />
   <img src="./Screenshot/profile.png" alt="Profile Screen" width="45%" />
 </p>
 
