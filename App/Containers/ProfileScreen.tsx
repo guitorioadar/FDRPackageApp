@@ -9,6 +9,7 @@ const ProfileScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
+        {/* <Text style={{color: 'white'}}>{__DEV__ ? 'Development' : 'Production'}</Text> */}
         <Octicons name="bell" size={20} color="white" />
       </View>
       <View style={styles.profileInfo}>

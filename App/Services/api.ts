@@ -9,7 +9,7 @@ const api = create({
 
 const fetchPackages = async (): Promise<IPackage[]> => {
   const response = await api.get('/packagelist')
-  console.log('api response',response)
+  // console.log('api response',response)  
   if (response.ok && response.data) {
     return response.data as IPackage[]
   } else {
