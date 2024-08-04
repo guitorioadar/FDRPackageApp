@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView, ActivityIndicator, RefreshControl } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, ActivityIndicator, RefreshControl, TouchableOpacity } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import { Octicons, AntDesign } from '@expo/vector-icons'
 import { useFetchPackages } from '../Services/api';
@@ -31,6 +31,9 @@ const HomeScreen: React.FC = observer(() => {
         return (
             <View style={styles.errorContainer}>
                 <Text style={styles.errorText}>Error fetching packages</Text>
+                <TouchableOpacity style={styles.retryButton} onPress={onRefresh}>
+                    <Text style={styles.retryText}>Retry</Text>
+                </TouchableOpacity>
             </View>
         );
     }
@@ -137,6 +140,18 @@ const styles = StyleSheet.create({
     errorText: {
         color: 'red',
     },
+    retryButton: {
+        marginTop: 16,
+        backgroundColor: 'white',
+        padding: 10,
+        borderRadius: 10,
+        borderWidth: 0.5,
+        minWidth: 80,
+        alignItems: 'center',
+    },
+    retryText: {
+        color: 'blue',
+    }
 });
 
 export default HomeScreen;
