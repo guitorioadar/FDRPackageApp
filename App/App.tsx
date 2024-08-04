@@ -4,6 +4,7 @@ import rootStore from './Stores/rootStore'
 import { StoreProvider } from './Stores/StoreProvider';
 import PrimaryNavigator from './Navigators/PrimaryNavigator'
 import { SafeAreaView, StyleSheet, Text } from 'react-native'
+import { StatusBar } from 'expo-status-bar';
 
 const queryClient = new QueryClient()
 
@@ -11,6 +12,7 @@ const App = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <StatusBar hidden={true} />
       <StoreProvider>
         <SafeAreaView style={styles.container}>
           <PrimaryNavigator />

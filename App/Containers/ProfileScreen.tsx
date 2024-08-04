@@ -156,8 +156,8 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   profileInfo: {
-    width: '80%',
-    height: 180,
+    width: '90%',
+    height: 200,
     alignItems: 'center',
     marginVertical: 20,
     backgroundColor: '#2a2a2a',
@@ -232,9 +232,9 @@ const styles = StyleSheet.create({
     color: '#ffd700',
   },
   infoContainer: {
-    paddingHorizontal: '10%',
+    paddingHorizontal: '5%',
     backgroundColor: '#2a2a2a',
-    marginTop: 160,
+    marginTop: 180,
     borderRadius: 20,
     flex: 1,
     // height: '100%',
